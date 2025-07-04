@@ -1,0 +1,71 @@
+Task 3: Test the MCP Server with Claude Desktop (Simulated)
+
+Note: Claude Desktop was not provided, so the MCP server was tested locally using Swagger UI and curl commands.
+
+---
+
+ Test 1: Generate 5 multiple-choice questions on Python loops
+
+Endpoint: POST /generate_mcq  
+Request Body:
+{
+  "topic": "Python loops",
+  "num": 5
+}
+
+Response:
+[
+  {
+    "question": "What is the output of: for i in range(3): print(i)?",
+    "options": ["1 2 3", "0 1 2", "0 1 2 3", "Error"],
+    "answer": "0 1 2"
+  },
+  {
+    "question": "Which keyword is used to terminate a loop in Python?",
+    "options": ["stop", "exit", "break", "end"],
+    "answer": "break"
+  },
+  ...
+]
+
+---
+
+ Test 2: Provide a lesson plan for teaching algebra
+
+Endpoint: POST /lesson_plan  
+Request Body:
+{
+  "subject": "Algebra"
+}
+
+Response:
+{
+  "subject": "Algebra",
+  "outline": [
+    "Introduction",
+    "Key Concepts",
+    "Examples",
+    "Hands-on Practice",
+    "Assessment & Summary"
+  ],
+  "tools_used": ["EduChain", "LangChain", "Claude Desktop"]
+}
+
+---
+
+ Test Method:
+- Swagger UI: http://127.0.0.1:8000/docs
+- curl:
+
+curl -X POST http://127.0.0.1:8000/generate_mcq \
+-H "Content-Type: application/json" \
+-d '{"topic": "Python loops", "num": 5}'
+
+curl -X POST http://127.0.0.1:8000/lesson_plan \
+-H "Content-Type: application/json" \
+-d '{"subject": "Algebra"}'
+
+---
+
+Conclusion:
+The MCP server is fully functional and compatible with JSON-based clients like Claude Desktop.

@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the correct syntax to output 'Hello, World' in Python?",
+    "options": [
+      "echo 'Hello, World'",
+      "print('Hello, World')",
+      "console.log('Hello, World')",
+      "write('Hello, World')"
+    ],
+    "answer": "print('Hello, World')"
+  },
+  {
+    "question": "Which of the following is a valid variable name in Python?",
+    "options": [
+      "my-variable",
+      "my variable",
+      "my_variable",
+      "2nd_variable"
+    ],
+    "answer": "my_variable"
+  },
+  {
+    "question": "What is the output of the following code: print(type(5))?",
+    "options": [
+      "<class 'int'>",
+      "<class 'str'>",
+      "<class 'float'>",
+      "<class 'list'>"
+    ],
+    "answer": "<class 'int'>"
+  }
+]

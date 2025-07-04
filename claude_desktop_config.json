@@ -1,0 +1,39 @@
+{
+    "mcp_server": {
+      "url": "http://127.0.0.1:8000",
+      "tools": [
+        {
+          "name": "generate_mcq",
+          "description": "Generate multiple-choice questions for a given topic",
+          "endpoint": "/generate_mcq",
+          "method": "POST",
+          "input_schema": {
+            "topic": "string",
+            "num": "integer"
+          }
+        }
+      ],
+      "resources": [
+        {
+          "name": "lesson_plan",
+          "description": "Generate a lesson plan for a specific subject",
+          "endpoint": "/lesson_plan",
+          "method": "POST",
+          "input_schema": {
+            "subject": "string"
+          }
+        }
+      ]
+    }
+  }
+  {
+    "name": "generate_flashcards",
+    "description": "Generate flashcards on a specific topic",
+    "endpoint": "/generate_flashcards",
+    "method": "POST",
+    "input_schema": {
+      "topic": "string",
+      "num": "integer"
+    }
+  }
+   
