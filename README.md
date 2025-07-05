@@ -1,6 +1,6 @@
 ```educhain-mcp-assignment/
 ├── educhain/                      # Cloned EduChain library (from satvik314/educhain)
-│   └── ...                        # Leave this as-is
+│   └── ...  #                     
 ├── mcp_server.py                  #  Main FastAPI MCP server (Task 2)
 ├── test_mcq.py                    #  Script to test EduChain MCQ generation (Task 1)
 ├── claude_desktop_config.json     #  Simulated Claude Desktop configuration (Task 3)
@@ -49,13 +49,15 @@ bash
 git clone https://github.com/RANJANA12-SHUKLA/educhain-mcp-assignment.git
 cd educhain-mcp-assignment
 
-# Step 0: Install dependencies
-pip install -r requirements.txt
+ 
 
-### 1. Activate virtual environment:
+### 0. Activate virtual environment:
 
 bash
 source educhain_env/Scripts/activate
+
+### 1: Install dependencies
+pip install -r requirements.txt
 
 ### 2. Run the MCP server:
 python mcp_server.py
