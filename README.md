@@ -1,12 +1,12 @@
 educhain_assignment/
-├── educhain/                    ✅ EduChain library (cloned from satvik314/educhain)
-├── mcp_server.py               ✅ MCP-compatible FastAPI server
-├── test_mcq.py                 ✅ Script to test MCQ generation
-├── claude_desktop_config.json  ✅ Simulated Claude config
-├── Sample_Responses.txt        ✅ Task 3 simulation results
-├── README.md                   ✅ Explains my project
-├── .gitignore                  ✅ Excludes __pycache__ and env folders
-└── .env.template               ✅ Dummy env file (no real API key)
+├── educhain/                    EduChain library (cloned from satvik314/educhain)
+├── mcp_server.py                MCP-compatible FastAPI server
+├── test_mcq.py                 Script to test MCQ generation
+├── claude_desktop_config.json   Simulated Claude config
+├── Sample_Responses.txt         Task 3 simulation results
+├── README.md                    Explains my project
+├── .gitignore                   Excludes __pycache__ and env folders
+└── .env.template                Dummy env file (no real API key)
 
 
 # EduChain MCP Server Assignment
