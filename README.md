@@ -1,14 +1,12 @@
-educhain-mcp-assignment/
-├── educhain/                      # Cloned EduChain library (from satvik314/educhain)
-│   └── ...                        # Leave this as-is
-├── mcp_server.py                  #  Main FastAPI MCP server (Task 2)
-├── test_mcq.py                    #  Script to test EduChain MCQ generation (Task 1)
-├── claude_desktop_config.json     #  Simulated Claude Desktop configuration (Task 3)
-├── Sample_Responses.txt           #  Task 3 output: input/output samples
-├── README.md                      #  Clear, well-documented project overview
-├── requirements.txt               #  Auto-generated list of dependencies
-├── .env.template                  #  Placeholder for environment variables
-├── .gitignore                     #  Tells Git what to ignore (like env folders, cache)
+educhain_assignment/
+├── educhain/                    ✅ EduChain library (cloned from satvik314/educhain)
+├── mcp_server.py               ✅ MCP-compatible FastAPI server
+├── test_mcq.py                 ✅ Script to test MCQ generation
+├── claude_desktop_config.json  ✅ Simulated Claude config
+├── Sample_Responses.txt        ✅ Task 3 simulation results
+├── README.md                   ✅ Explains my project
+├── .gitignore                  ✅ Excludes __pycache__ and env folders
+└── .env.template               ✅ Dummy env file (no real API key)
 
 
 # EduChain MCP Server Assignment
@@ -44,9 +42,18 @@ Claude Desktop was not provided. Local testing was done using Swagger and curl, 
 
 ##  How to Run the Server
 
+##  Clone This Repository
+
+bash
+git clone https://github.com/RANJANA12-SHUKLA/educhain-mcp-assignment.git
+cd educhain-mcp-assignment
+
+# Step 0: Install dependencies
+pip install -r requirements.txt
+
 ### 1. Activate virtual environment:
 
-```bash
+bash
 source educhain_env/Scripts/activate
 
 ### 2. Run the MCP server:
@@ -54,5 +61,5 @@ python mcp_server.py
 
 
 ### 3.Open the API in your browser:
- http://127.0.0.1:8000/docs
+ http://127.0.0.1:8000/docs    
 
